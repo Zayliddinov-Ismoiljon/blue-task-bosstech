@@ -1,0 +1,256 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.bg-image{
+	background-image: url(https://i2-prod.mylondon.news/incoming/article25774006.ece/ALTERNATES/s1200/1_GettyImages-499876608.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 600px;
+	object-fit: cover;
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	position: absolute;
+	z-index: -2;
+}
+
+.bg-color{
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	z-index: -1;
+	background-color: rgba( 70,176,192,0.6)
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	padding: 20px 0px;
+}
+
+.logo{
+	width: 90px;
+	height: 80px;
+}
+
+.nav{
+	width: 20%;
+}
+
+.nav__list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* .nav__item:nth-child(2){
+	border-bottom: 1.3px solid silver;
+} */
+
+.nav__link{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+}
+
+.nav__link{
+	background:
+    linear-gradient(
+      to right,
+      rgb(254, 254, 254),
+      rgb(255, 255, 255)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 1px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav__link:hover{
+	background-size: 0 3px, 100% 3px;
+}
+
+.heading{
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+	color: white;
+	margin: 80px 0px;
+}
+
+.header-inner__link{
+	text-decoration: none;
+	color: white;
+	font-size: 36px;
+	text-transform: uppercase;
+	border: 1.5px solid white;
+	border-radius: 5px;
+	padding: 10px 15px;
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+
+
+	--c: #82d5f0;
+  line-height: 1.2em;
+  background:
+    conic-gradient(from -135deg at 100%  50%,var(--c) 90deg,#0000 0) 0    var(--p,0%),
+    conic-gradient(from -135deg at 1.2em 50%,#0000 90deg,var(--c) 0) 100% var(--p,0%);
+  background-size: var(--s,0%) 200%;
+  background-repeat: no-repeat;
+  transition: .4s ease-in, background-position 0s;
+}
+
+.header-inner__link:hover{
+	 --p: 100%;
+  --s: calc(50% + .61em); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  color: #fff;
+}
+
+
+
+.work{
+	background-color: #14BCE0;
+	margin-top: 8%;
+	border-top: 2px solid white;
+}
+
+.work-about{
+	text-align: center;
+	padding: 30px 0px;
+}
+
+.work__title{
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+}
+
+.work__text{
+	font-size: 18px;
+	color: white;
+}
+
+
+.element__list{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.element__item{
+	width: 22%;
+	position: relative;
+	height: 220px;
+}
+
+.element__item:hover .element__img{
+	 opacity: 0.3;
+}
+
+.element__item:hover .box{
+	 opacity: 1;
+}
+
+.element__img{
+	opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box{
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.element__text{
+	background-color: #8bdcee;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.can-do{
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.can-do__title{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: black;
+	font-weight: 600;
+	margin: 15px 0px;
+}
+
+.can-do__text{
+	font-size: 16px;
+	color: rgb(97, 96, 96);
+}
+
+.can-do__list{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.can-do__item{
+	width: 22%;
+	text-align: center;
+	justify-content: center;
+}
+
+.can-do__img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.can-do__heading{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.can-do__text1{
+	font-size: 14px;
+}
